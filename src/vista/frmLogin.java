@@ -35,6 +35,7 @@ public class frmLogin extends javax.swing.JDialog {
         txtClave = new javax.swing.JPasswordField();
         btnGuardarC = new javax.swing.JButton();
         btnSalirC = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -42,25 +43,25 @@ public class frmLogin extends javax.swing.JDialog {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newpackageImg/LOGIN.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 80, 90));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 80, 90));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("USUARIO");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 50, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 50, -1));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("CLAVE");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
 
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 170, -1));
-        getContentPane().add(txtClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 170, -1));
+        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 170, -1));
+        getContentPane().add(txtClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 170, -1));
 
         btnGuardarC.setText("Ingresar");
         btnGuardarC.setOpaque(false);
@@ -69,7 +70,7 @@ public class frmLogin extends javax.swing.JDialog {
                 btnGuardarCActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGuardarC, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 90, -1));
+        getContentPane().add(btnGuardarC, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 90, -1));
 
         btnSalirC.setText("Salir");
         btnSalirC.setOpaque(false);
@@ -78,10 +79,15 @@ public class frmLogin extends javax.swing.JDialog {
                 btnSalirCActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalirC, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 75, -1));
+        getContentPane().add(btnSalirC, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 75, -1));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Iniciar Sesión");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newpackageImg/Fondo4.jpeg"))); // NOI18N
-        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 240));
+        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 330));
 
         pack();
         setLocationRelativeTo(null);
@@ -145,6 +151,7 @@ public class frmLogin extends javax.swing.JDialog {
     private javax.swing.JButton btnGuardarC;
     private javax.swing.JButton btnSalirC;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblFondo;

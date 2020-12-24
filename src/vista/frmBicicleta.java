@@ -32,7 +32,6 @@ public class frmBicicleta extends javax.swing.JDialog {
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         txtBusCod = new javax.swing.JTextField();
-        txtEst = new javax.swing.JTextField();
         txtBusc = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnGuardar = new javax.swing.JButton();
@@ -52,6 +51,7 @@ public class frmBicicleta extends javax.swing.JDialog {
         jLabel8 = new javax.swing.JLabel();
         txtAlqui = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
         lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -60,7 +60,7 @@ public class frmBicicleta extends javax.swing.JDialog {
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Marca");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, -1, 20));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, 20));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nro. Codigo");
@@ -68,9 +68,8 @@ public class frmBicicleta extends javax.swing.JDialog {
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Estado");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, -1, 30));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, 30));
         getContentPane().add(txtBusCod, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 134, -1));
-        getContentPane().add(txtEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 100, -1));
 
         txtBusc.setText("Buscar");
         txtBusc.setOpaque(false);
@@ -78,7 +77,7 @@ public class frmBicicleta extends javax.swing.JDialog {
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Código");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 84, -1, 20));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, 20));
 
         btnGuardar.setText("Guardar");
         btnGuardar.setOpaque(false);
@@ -91,7 +90,7 @@ public class frmBicicleta extends javax.swing.JDialog {
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Color");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 114, -1, 20));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, 20));
 
         btnEli.setText("Eliminar");
         btnEli.setOpaque(false);
@@ -124,7 +123,7 @@ public class frmBicicleta extends javax.swing.JDialog {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 440, 84));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 114, -1));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(104, 180, 120, -1));
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Precio Daño");
@@ -134,15 +133,18 @@ public class frmBicicleta extends javax.swing.JDialog {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Precio Alquiler");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 144, -1, 20));
-        getContentPane().add(txtAlqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 90, -1));
+        getContentPane().add(txtAlqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 100, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Registro Bicicletas");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 350, 55));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 350, 55));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Disponible", "Ocupado" }));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 100, -1));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newpackageImg/Fondo1.jpeg"))); // NOI18N
-        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 450));
+        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 450));
 
         pack();
         setLocationRelativeTo(null);
@@ -197,6 +199,7 @@ public class frmBicicleta extends javax.swing.JDialog {
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnSal;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -215,6 +218,5 @@ public class frmBicicleta extends javax.swing.JDialog {
     private javax.swing.JTextField txtCod;
     private javax.swing.JTextField txtCol;
     private javax.swing.JTextField txtDaño;
-    private javax.swing.JTextField txtEst;
     // End of variables declaration//GEN-END:variables
 }

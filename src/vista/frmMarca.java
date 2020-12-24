@@ -93,7 +93,7 @@ public class frmMarca extends javax.swing.JDialog {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 380, 90));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newpackageImg/Fondo1.jpeg"))); // NOI18N
-        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 350));
+        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 340));
 
         pack();
         setLocationRelativeTo(null);
